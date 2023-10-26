@@ -1,0 +1,20 @@
+/* ==========================================================================
+   FONTS / SETTINGS
+   ========================================================================== */
+/// Font family
+:root {
+    --font-primary: 'Archivo', sans-serif;
+    --font-secondary: 'Judson', serif;
+    --font-size-content: 1.6rem;
+
+    /// Grosseur des textes
+    --font-size-h1: 9.6rem;
+    --font-size-h2: 6.4rem;
+    --font-size-h3: 3.2rem;
+    --font-size-a: 2.4rem;
+    --font-size-nav: 2rem;
+    --font-size-logo: 4.8rem;
+    --font-size-date: 3.6rem;
+    --font-size-h1-tablette: 6.4rem;
+    --font-size-h1-mobile: 4rem;
+}

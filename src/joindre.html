@@ -1,0 +1,230 @@
+{% include '_partials/_header.html' %}
+<section class="joindre">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10657.120043698234!2d-69.7356238221266!3d48.104833918675354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cbfd315be0748cf%3A0x795e89795bbe65c7!2sBaie-Sainte-Catherine%2C%20QC%20G0T%201A0!5e0!3m2!1sfr!2sca!4v1684167205141!5m2!1sfr!2sca"
+        width="100%"
+        height="480"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <h2 data-scrolly="fromLeft">Hôtel de ville</h2>
+
+    <img src="assets/images/hotel.jpg" alt="hotel" data-scrolly="fromBottom" />
+
+    <div class="wrapper" data-scrolly="fromBottom">
+        <h3 class="heures">Heures d'ouverture</h3>
+        <h3>
+            Lundi au jeudi :8h30 à 12h00 & 13h00 à 16h30
+            <br />
+            Vendredi : Fermé
+            <br />
+            Édifice municipal Albert-Boulianne
+            <br />
+            308, rue Leclerc, Baie-Sainte-Catherine (Québec) G0T 1A0
+            <br />
+            Téléphone : 418-620-5020
+            <br />
+            Télécopieur: 418-620-5021
+            <br />
+            Courriel : municipalite@baiestecatherine.com
+        </h3>
+    </div>
+</section>
+
+<section class="formulaire">
+    <div class="wrapper">
+        <h2 data-scrolly="fromRight">Requête citoyenne</h2>
+
+        <form action="" class="form" autocomplete="off" data-component="Form" data-scrolly="fromBottom">
+            <div class="form__body">
+                <h3>Informations personnelles</h3>
+                <fieldset class="grid">
+                    <div class="input">
+                        <label class="input__label" for="fullname">Prénom</label>
+                        <input
+                            class="input__element"
+                            type="text"
+                            name="fullname"
+                            id="fullname"
+                            placeholder="ex.: Kevin"
+                            required
+                        />
+                        <label class="input_label_error" for="fullname">veuillez remplir le champ correctement</label>
+                    </div>
+
+                    <div class="input">
+                        <label class="input__label" for="fullname">Nom</label>
+                        <input
+                            class="input__element"
+                            type="text"
+                            name="fullname"
+                            id="fullname"
+                            placeholder="ex.: Robert"
+                            required
+                        />
+                        <label class="input_label_error" for="fullname">veuillez remplir le champ correctement</label>
+                    </div>
+
+                    <div class="input">
+                        <label class="input__label" for="adresse">Adresse</label>
+                        <input
+                            class="input__element"
+                            type="text"
+                            name="adresse"
+                            id="adresse"
+                            placeholder="ex.: 3680 Boulevard Gaétan-Boucher"
+                            required
+                        />
+                        <label class="input_label_error" for="adresse">veuillez remplir le champ correctement</label>
+                    </div>
+
+                    <div class="input">
+                        <label class="input__label" for="postal">Code postal</label>
+                        <input
+                            class="input__element"
+                            type="text"
+                            name="postal"
+                            id="postal"
+                            placeholder="ex.: J3Y 7S3"
+                            required
+                        />
+                        <label class="input_label_error" for="postal">veuillez remplir le champ correctement</label>
+                    </div>
+
+                    <div class="input">
+                        <label class="input__label" for="city">Ville</label>
+                        <input
+                            class="input__element"
+                            type="text"
+                            name="city"
+                            id="city"
+                            placeholder="ex.: St-Hubert"
+                            required
+                        />
+                        <label class="input_label_error" for="city">veuillez remplir le champ correctement</label>
+                    </div>
+
+                    <div class="input select">
+                        <label class="input__label" for="province">Province</label>
+                        <select name="province" id="province" class="input__element" required>
+                            <option value="" hidden>Choisir une province</option>
+                            <option value="qc">Québec</option>
+                            <option value="on">Ontario</option>
+                            <option value="ab">Alberta</option>
+                            <option value="pe">Île-du-Prince-Édouard</option>
+                            <option value="mb">Manitoba</option>
+                            <option value="nb">Nouveau-Brunswick</option>
+                            <option value="ns">Nouvelle-Écosse</option>
+                            <option value="sk">Saskatchewan</option>
+                            <option value="nl">Terre-Neuve-et-Labrador</option>
+                        </select>
+                        <label class="input_label_error" for="province">veuillez remplir le champ correctement</label>
+                    </div>
+
+                    <div class="input">
+                        <label class="input__label" for="phone">Numéro de téléphone</label>
+                        <input
+                            class="input__element"
+                            type="tel"
+                            name="phone"
+                            id="phone"
+                            placeholder="(555) 666-777"
+                            pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                            required
+                        />
+                        <label class="input_label_error" for="phone">veuillez remplir le champ correctement</label>
+                    </div>
+
+                    <div class="input">
+                        <label class="input__label" for="email">Adresse courriel</label>
+                        <input
+                            class="input__element"
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="2173202@cegepmontpetit.ca"
+                            required
+                        />
+                        <label class="input_label_error" for="email">veuillez remplir le champ correctement</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h3>Choisisser votre méthode préférée pour vous joindre</h3>
+
+                    <div class="form__list" data-input-container>
+                        <div class="input radio">
+                            <input
+                                class="input__element"
+                                type="radio"
+                                name="join[]"
+                                id="courriel"
+                                value="courriel"
+                                required
+                            />
+                            <label class="input__label" for="courriel">Courriel</label>
+                        </div>
+
+                        <div class="input radio">
+                            <input class="input__element" type="radio" name="join[]" id="tel" value="tel" required />
+                            <label class="input__label" for="tel">Téléphone</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h3>Requête citoyenne</h3>
+
+                    <div class="input select">
+                        <label class="input__label" for="subject">Sujet</label>
+                        <select name="subject" id="subject" class="input__element" required>
+                            <option value="" hidden>Choisir un sujet</option>
+                            <option value="ps">Permis de stationnement</option>
+                            <option value="dr">Demande de renseignements</option>
+                            <option value="rs">Réservation de salle</option>
+                        </select>
+                        <label class="input_label_error" for="subject">veuillez remplir le champ correctement</label>
+                    </div>
+
+                    <div class="input textarea u-grid-fullwidth">
+                        <label class="input__label" for="comment">Commentaire</label>
+                        <textarea
+                            class="input__element"
+                            name="comment"
+                            id="comment"
+                            maxlength="500"
+                            required
+                        ></textarea>
+                        <label class="input_label_error" for="comment">veuillez remplir le champ correctement</label>
+                    </div>
+
+                    <div class="input checkbox">
+                        <input class="input__element" type="checkbox" name="optin[]" id="optin" value="true" />
+                        <label class="input__label" for="optin">J'accepte les conditions d'utilisations</label>
+                    </div>
+                </fieldset>
+
+                <footer class="form__footer">
+                    <button class="btn-formulaire">Envoyer</button>
+                </footer>
+            </div>
+
+            <div class="form__confirmation">
+                <h3>Merci</h3>
+                <p>Votre formulaire a bien été envoyé.</p>
+            </div>
+        </form>
+    </div>
+</section>
+
+<section class="alerte">
+    <div class="wrapper">
+        <div class="exclamation">!</div>
+        <h2>Alerte pluie verglaçante</h2>
+    </div>
+</section>
+
+{% include '_partials/_footer.html' %}

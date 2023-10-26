@@ -1,0 +1,496 @@
+{% include '_partials/_header.html' %}
+
+<section class="hero">
+    <div class="block-meteo">
+        <div class="block" data-scrolly="fromLeft">
+            <h1>Capitale de la Zénitude et des baleines</h1>
+            <div class="recherche">
+                <svg class="icon">
+                    <use xlink:href="#icon-loupe"></use>
+                </svg>
+            </div>
+        </div>
+        <div class="meteo" data-scrolly="fromBottom">
+            <svg class="icon icon--lg">
+                <use xlink:href="#icon-nuage"></use>
+            </svg>
+            <p>15°c</p>
+        </div>
+    </div>
+
+    <div class="carousel swiper swiper-hero" data-component="Carousel" data-autoplay="" data-loop data-gap="0">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/images/baleine.jpg" alt="baleine" /></div>
+            <div class="swiper-slide"><img src="assets/images/foret.jpg" alt="foret" /></div>
+            <div class="swiper-slide"><img src="assets/images/foret2.jpg" alt="foret" /></div>
+            <div class="swiper-slide"><img src="assets/images/lac.jpg" alt="lac" /></div>
+        </div>
+
+        <div class="swiper-pagination" data-scrolly="fromBottom"></div>
+    </div>
+</section>
+
+<section class="alerte">
+    <div class="wrapper">
+        <div class="exclamation">!</div>
+        <h2>Alerte pluie verglaçante</h2>
+    </div>
+</section>
+
+<section class="actualite">
+    <div class="wrapper">
+        <div class="sous-titre" data-scrolly="fromLeft">
+            <h2>Actualités</h2>
+            <div class="btn">
+                <svg class="icon icon--lg">
+                    <use xlink:href="#icon-plus"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="right" data-scrolly="fromBottom">
+        <div
+            class="carousel swiper swiper-actualite"
+            data-component="Carousel"
+            data-variant="split3"
+            data-loop
+            data-gap="32"
+        >
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <article class="card">
+                        <img src="assets/images/poules.jpg" alt="poules" />
+                        <p>28 mars 2023</p>
+                        <h3>Propriétaire de poules urbaines</h3>
+                        <a href="#">Voir plus</a>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="card">
+                        <img src="assets/images/branche.jpg" alt="branche" />
+                        <p>13 avril 2023</p>
+                        <h3>Collecte spéciale de branches</h3>
+                        <a href="#">Voir plus</a>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="card">
+                        <img src="assets/images/tennis.jpg" alt="tennis" />
+                        <p>30 avril 2023</p>
+                        <h3>Ouverture des terrains de tennis</h3>
+                        <a href="#">Voir plus</a>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="card">
+                        <img src="assets/images/banc.png" alt="banc" />
+                        <p>1 mai 2023</p>
+                        <h3>Séance publique du conseil</h3>
+                        <a href="#">Voir plus</a>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="card">
+                        <img src="assets/images/corde.png" alt="corde" />
+                        <p>12 mai 2023</p>
+                        <h3>Camp de jour 2023 : inscription</h3>
+                        <a href="#">Voir plus</a>
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn btn-absolute">
+            <svg class="icon icon--lg">
+                <use xlink:href="#icon-fleche"></use>
+            </svg>
+        </div>
+    </div>
+</section>
+
+<section class="evenements">
+    <div class="wrapper">
+        <h2 data-scrolly="fromLeft">Événements</h2>
+        <div class="flex-evenements">
+            <div class="calendrier-legende" data-scrolly="fromLeft">
+                <div class="calendrier">
+                    <div class="calendrier-flex">
+                        <div class="calendrier-titre">
+                            <h3>Mars</h3>
+                            <p>2023</p>
+                        </div>
+
+                        <div class="calendrier-fleche">
+                            <div class="btn btn-calendrier">
+                                <svg class="icon icon--lg fleche-gauche">
+                                    <use xlink:href="#icon-fleche"></use>
+                                </svg>
+                            </div>
+
+                            <div class="btn btn-calendrier">
+                                <svg class="icon icon--lg">
+                                    <use xlink:href="#icon-fleche"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="calendrier-grid">
+                        <div class="vert">1</div>
+                        <div>2</div>
+                        <div class="brun">3</div>
+                        <div>4</div>
+                        <div class="turquoise">5</div>
+                        <div>6</div>
+                        <div>7</div>
+
+                        <div>8</div>
+                        <div>9</div>
+                        <div class="brun">10</div>
+                        <div class="vert">11</div>
+                        <div class="turquoise">12</div>
+                        <div>13</div>
+                        <div>14</div>
+
+                        <div>15</div>
+                        <div>16</div>
+                        <div class="brun">17</div>
+                        <div>18</div>
+                        <div class="turquoise">19</div>
+                        <div>20</div>
+                        <div>21</div>
+
+                        <div>22</div>
+                        <div class="vert">23</div>
+                        <div class="brun">24</div>
+                        <div>25</div>
+                        <div class="turquoise">26</div>
+                        <div>27</div>
+                        <div>28</div>
+
+                        <div>29</div>
+                        <div>30</div>
+                        <div class="brun">31</div>
+                    </div>
+                </div>
+                <div class="legende">
+                    <h3>Légende</h3>
+                    <div class="legende-couleur">
+                        <div class="vert"></div>
+                        <p>Événements</p>
+                    </div>
+
+                    <div class="legende-couleur">
+                        <div class="turquoise"></div>
+                        <p>Jour de recyclage</p>
+                    </div>
+
+                    <div class="legende-couleur">
+                        <div class="brun"></div>
+                        <p>Jour des poubelles</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="articles" data-scrolly="fromBottom">
+                <article>
+                    <div class="contenu">
+                        <h3>Les lundis qui chantent</h3>
+                        <p>1 mars 2023</p>
+                        <p>
+                            Chanter, c'est bien connu, permet de se détendre tout en exprimant ses émotions. C'est aussi
+                            une bonne façon d'oublier le quotidien, de lâcher prise et d'évacuer le stress. S'adonner au
+                            chant permet aussi d'améliorer ou de maintenir sa mémoire et son attention. Que de
+                            bienfaits!
+                        </p>
+                    </div>
+
+                    <img src="assets/images/vieux.jpg" alt="vieux" />
+                </article>
+
+                <article>
+                    <div class="contenu">
+                        <h3>Heure musicale pour les minis</h3>
+                        <p>11 mars 2023</p>
+                        <p>
+                            Un petit moment musicale pour bercer les petits et les grands… Un occasion de détente, de
+                            rêverie et de relaxation à partager en famille. Confortablement installés, profitez des
+                            douces mélodies proposées par le son du piano-voix des sœurs Hélène et Sylvie Decoste.
+                        </p>
+                    </div>
+
+                    <img src="assets/images/bebe.jpg" alt="bebe" />
+                </article>
+
+                <article>
+                    <div class="contenu">
+                        <h3>Fabrication d'un poèmophone</h3>
+                        <p>23 mars 2023</p>
+                        <p>
+                            Vous fabriquerez un « poèmophone », un instrument qui te permettra de déposer, tout en
+                            douceur et de façon originale, des poèmes de ton choix dans l'oreille des membres de ta
+                            famille ou celle de tes ami.es!
+                        </p>
+                    </div>
+
+                    <img src="assets/images/flute.jpg" alt="flute" />
+                </article>
+
+                <a href="#">Voir plus</a>
+            </div>
+
+            <div class="carousel swiper swiper-evenements" data-component="Carousel" data-gap="20">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <article class="card-evenement">
+                            <div class="contenu">
+                                <h3>Les lundis qui chantent</h3>
+                                <p>1 mars 2023</p>
+                                <p>
+                                    Chanter, c'est bien connu, permet de se détendre tout en exprimant ses émotions.
+                                    C'est aussi une bonne façon d'oublier le quotidien, de lâcher prise et d'évacuer le
+                                    stress. S'adonner au chant permet aussi d'améliorer ou de maintenir sa mémoire et
+                                    son attention. Que de bienfaits!
+                                </p>
+                            </div>
+                            <img src="assets/images/vieux.jpg" alt="vieux" />
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="card-evenement">
+                            <div class="contenu">
+                                <h3>Heure musicale pour les minis</h3>
+                                <p>11 mars 2023</p>
+                                <p>
+                                    Un petit moment musicale pour bercer les petits et les grands… Un occasion de
+                                    détente, de rêverie et de relaxation à partager en famille. Confortablement
+                                    installés, profitez des douces mélodies proposées par le son du piano-voix des sœurs
+                                    Hélène et Sylvie Decoste.
+                                </p>
+                            </div>
+                            <img src="assets/images/bebe.jpg" alt="bebe" />
+                        </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <article class="card-evenement">
+                            <div class="contenu">
+                                <h3>Fabrication d'un poèmophone</h3>
+                                <p>23 mars 2023</p>
+                                <p>
+                                    Vous fabriquerez un « poèmophone », un instrument qui te permettra de déposer, tout
+                                    en douceur et de façon originale, des poèmes de ton choix dans l'oreille des membres
+                                    de ta famille ou celle de tes ami.es!
+                                </p>
+                            </div>
+                            <img src="assets/images/flute.jpg" alt="flute" />
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="switch">Voir plus</a>
+        </div>
+    </div>
+</section>
+
+<section class="merveilles">
+    <div class="wrapper">
+        <div class="sous-titre" data-scrolly="fromBottom">
+            <h2>Venez voir nos merveilles</h2>
+            <div class="btn">
+                <svg class="icon icon--lg">
+                    <use xlink:href="#icon-plus"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="activites">
+            <div class="activite" data-scrolly="fromLeft">
+                <div class="contenu">
+                    <h3>Observation des mammifères marins</h3>
+                    <p>
+                        Les baleines parcourent des milliers de kilomètres pour venir s'alimenter dans le garde-manger
+                        géant et naturel du parc marin du Saguenay — Saint-Laurent, le meilleur site d'observation des
+                        mammifères marins au monde! Au départ de Baie-Sainte-Catherine, à bord d'un Zodiac ou d'un
+                        bateau tout confort, ces excursions donnent la chance d'admirer les géants de la mer.
+                    </p>
+                </div>
+
+                <div class="images">
+                    <img src="assets/images/queue.jpg" alt="queue" class="img-1" />
+                    <img src="assets/images/bateau.jpg" alt="bateau" class="img-2" />
+                </div>
+            </div>
+
+            <div class="activite inverse" data-scrolly="fromLeft">
+                <div class="contenu">
+                    <h3>La Chapelle Notre-Dame-de l'Espace</h3>
+                    <p>
+                        Initiative d'un frère qui fut un survivant des camps de la Deuxième Guerre mondiale (1939-1945),
+                        soit le frère Laurent Cosgrove. Membre de l'Ordre Hospitalier de Saint-Jean-de-Dieu, il avait le
+                        vœu, s'il sortait vivant des camps de faire honorer Notre-Dame sous ce nouveau nom que lui avait
+                        inspiré la vision des avions de guerre qui semaient la désolation et la mort.
+                    </p>
+                </div>
+
+                <div class="images">
+                    <img src="assets/images/eglise2.jpg" alt="eglise" class="img-1" />
+                    <img src="assets/images/eglise.jpg" alt="eglise" class="img-2" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="vivre">
+    <div class="wrapper">
+        <h2 data-scrolly="fromLeft">Un endroit pour s'établir</h2>
+        <div class="vivre-flex">
+            <div class="faq" data-scrolly="fromLeft" data-component="Accordion" data-not-closing>
+                <div class="accordion__container js-header" data-auto-open>
+                    <div class="accordion__header">
+                        <h4>Qu'est-ce que la MRC de Baie Ste-Catherine?</h4>
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-fleche"></use>
+                        </svg>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine est une municipalité régionale de comté située dans la région
+                        administrative de la Côte-Nord au Québec, Canada.
+                    </div>
+                </div>
+
+                <div class="accordion__container js-header">
+                    <div class="accordion__header">
+                        <h4>Quelle est la population de la MRC de Baie Ste-Catherine?</h4>
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-fleche"></use>
+                        </svg>
+                    </div>
+                    <div class="accordion__content">
+                        Selon le recensement de 2016, la population de la MRC de Baie Ste-Catherine est de 3 229
+                        habitants.
+                    </div>
+                </div>
+
+                <div class="accordion__container js-header">
+                    <div class="accordion__header">
+                        <h4>Quels sont les principaux secteurs économiques de la MRC de Baie Ste-Catherine?</h4>
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-fleche"></use>
+                        </svg>
+                    </div>
+                    <div class="accordion__content">
+                        Les principales industries de la MRC de Baie Ste-Catherine sont la pêche, le transport maritime,
+                        le tourisme et l'agriculture.
+                    </div>
+                </div>
+
+                <div class="accordion__container js-header">
+                    <div class="accordion__header">
+                        <h4>Quels sont les attraits touristiques de la MRC de Baie Ste-Catherine?</h4>
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-fleche"></use>
+                        </svg>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine est connue pour sa proximité avec les baleines, ce qui en fait une
+                        destination populaire pour les excursions d'observation des baleines. Elle compte également de
+                        nombreux sentiers de randonnée, des plages, des musées et des festivals tout au long de l'année.
+                    </div>
+                </div>
+
+                <div class="accordion__container js-header">
+                    <div class="accordion__header">
+                        <h4>Quels sont les services offerts par la MRC de Baie Ste-Catherine à ses citoyens?</h4>
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-fleche"></use>
+                        </svg>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine offre une gamme de services à ses citoyens, notamment des services
+                        de gestion des déchets, des services de protection contre les incendies, des services de
+                        développement économique et touristique et des services de transport en commun.
+                    </div>
+                </div>
+
+                <div class="accordion__container js-header">
+                    <div class="accordion__header">
+                        <h4>Quels sont les événements annuels organisés par la MRC de Baie Ste-Catherine?</h4>
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-fleche"></use>
+                        </svg>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine organise plusieurs événements tout au long de l'année, tels que la
+                        Fête de la pêche, la Journée internationale des femmes, la Fête de la musique et le Tournoi de
+                        hockey Baie Ste-Catherine.
+                    </div>
+                </div>
+
+                <div class="accordion__container js-header">
+                    <div class="accordion__header">
+                        <h4>Quels sont les projets en cours dans la MRC de Baie Ste-Catherine?</h4>
+                        <svg class="icon icon--md">
+                            <use xlink:href="#icon-fleche"></use>
+                        </svg>
+                    </div>
+                    <div class="accordion__content">
+                        La MRC de Baie Ste-Catherine travaille actuellement sur plusieurs projets, notamment le
+                        développement d'un parc industriel et l'amélioration des infrastructures de transport.
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="carousel swiper swiper-vivre"
+                data-component="Carousel"
+                data-loop
+                data-gap="0"
+                data-scrolly="fromBottom"
+            >
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/maisons.jpg" alt="maisons" /></div>
+                    <div class="swiper-slide"><img src="assets/images/amis.jpg" alt="amis" /></div>
+                    <div class="swiper-slide"><img src="assets/images/kayak.jpg" alt="kayak" /></div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <img src="assets/images/famille.jpg" alt="famille" data-scrolly="fromBottom" />
+</section>
+
+<section class="youtube">
+    <div class="wrapper">
+        <h2 data-scrolly="fromLeft">Regardez nos dernières vidéos</h2>
+        <div class="youtube-flex">
+            <div class="video" data-component="YouTube" data-video-id="m6Tcf5PGqy8" data-controls="0">
+                <div class="video__media js-video">
+                    <img class="js-poster" src="assets/images/foret.jpg" alt="foret" />
+                    <svg class="icon icon--xl">
+                        <use xlink:href="#icon-play"></use>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="video" data-component="YouTube" data-video-id="rFGxeyAe_d4" data-controls="0">
+                <div class="video__media js-video">
+                    <img class="js-poster" src="assets/images/baleine.jpg" alt="baleine" />
+                    <svg class="icon icon--xl">
+                        <use xlink:href="#icon-play"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include '_partials/_footer.html' %}

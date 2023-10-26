@@ -1,0 +1,98 @@
+/* ==========================================================================
+   merveilles / component
+   ========================================================================== */
+
+.merveilles {
+    padding: 50px 0;
+}
+
+.activites {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.activite {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1000px) {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .contenu {
+        max-width: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        @media screen and (min-width: 1000px) {
+            max-width: 521px;
+        }
+
+        @media screen and (min-width: $breakpoint-ml) {
+            max-width: 525px;
+        }
+    }
+
+    .images {
+        position: relative;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        @media screen and (min-width: 1000px) {
+            width: 365px;
+            height: 215px;
+
+            img {
+                max-width: 234px;
+            }
+        }
+
+        @media screen and (min-width: $breakpoint-ml) {
+            width: 654px;
+            height: 330px;
+
+            img {
+                max-width: 405px;
+            }
+        }
+
+        .img-1 {
+            position: initial;
+
+            @media screen and (min-width: 1000px) {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        .img-2 {
+            position: initial;
+            display: none;
+
+            @media screen and (min-width: 1000px) {
+                display: initial;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+.inverse {
+    flex-direction: column;
+
+    @media screen and (min-width: 1000px) {
+        flex-direction: row-reverse;
+    }
+}

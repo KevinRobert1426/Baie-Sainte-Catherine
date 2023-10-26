@@ -1,0 +1,55 @@
+/* ==========================================================================
+   alerte / component
+   ========================================================================== */
+
+.alerte {
+    background-color: var(--color-bg-secondary);
+    padding: 20px 0;
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            gap: 50px;
+        }
+
+        @media screen and (min-width: $breakpoint-ml) {
+            gap: 100px;
+        }
+
+        h2 {
+            margin: 0;
+            color: var(--color-white);
+            font-size: var(--font-size-h3);
+
+            @media screen and (min-width: $breakpoint-sm) {
+                font-size: var(--font-size-logo);
+            }
+
+            @media screen and (min-width: $breakpoint-ml) {
+                font-size: var(--font-size-h2);
+            }
+        }
+    }
+}
+
+.exclamation {
+    display: flex;
+    height: 65px;
+    aspect-ratio: 1 / 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    padding: 8px 28px;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+
+    @media screen and (min-width: $breakpoint-sm) {
+        height: 94px;
+        font-size: var(--font-size-h1-tablette);
+        padding: 8px 38px;
+    }
+}

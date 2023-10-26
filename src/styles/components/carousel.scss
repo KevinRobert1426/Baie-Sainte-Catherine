@@ -1,0 +1,121 @@
+/* ==========================================================================
+   carousel / component
+   ========================================================================== */
+.swiper-hero .swiper-slide {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        max-width: none;
+    }
+
+    @media screen and (min-width: $breakpoint-ml) {
+        height: 92vh;
+    }
+}
+
+.swiper-pagination-bullet {
+    --width: 70px;
+    --height: 7px;
+    border-radius: 0;
+    height: var(--height);
+    transition: border 0.4s ease-out;
+    width: var(--width);
+    background-color: var(--color-bg-primary);
+    opacity: 1;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        --width: 140px;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-secondary);
+}
+
+.swiper-hero {
+    .swiper-pagination {
+        bottom: 60px;
+
+        .swiper-pagination-bullet {
+            margin: 0 8.5px;
+
+            @media screen and (min-width: $breakpoint-sm) {
+                margin: 0 20px;
+            }
+        }
+    }
+}
+
+.swiper-actualite {
+    max-width: 1150px;
+    margin: 0;
+}
+
+.swiper-evenements {
+    width: 100%;
+    display: block;
+    margin-top: 60px;
+
+    .card-evenement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        color: var(--color-white);
+
+        h3 {
+            color: var(--color-white);
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @media screen and (min-width: $breakpoint-sm) {
+            flex-direction: row;
+            gap: 64px;
+        }
+    }
+
+    @media screen and (min-width: $breakpoint-ml) {
+        display: none;
+    }
+}
+
+.swiper-vivre {
+    max-width: 290px;
+    height: 383px;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        max-width: 462px;
+    }
+
+    img {
+        margin-top: 0;
+        height: 100%;
+    }
+
+    .swiper-pagination {
+        bottom: 35px;
+
+        .swiper-pagination-bullet {
+            width: 42px;
+            margin: 0 13px;
+        }
+    }
+}
+
+[data-variant='split'] {
+    .swiper-slide {
+        width: 25%;
+    }
+}

@@ -1,0 +1,188 @@
+/* ==========================================================================
+   evenements / component
+   ========================================================================== */
+
+.evenements {
+    background-color: var(--color-primary);
+    padding: 50px 0;
+    text-align: center;
+
+    @media screen and (min-width: $breakpoint-ml) {
+        text-align: right;
+    }
+
+    h2 {
+        color: var(--color-secondary);
+        margin-bottom: 50px;
+    }
+}
+
+.flex-evenements {
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media screen and (min-width: $breakpoint-ml) {
+        flex-direction: row;
+    }
+}
+
+.calendrier-legende {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+
+    @media screen and (min-width: $breakpoint-ml) {
+        align-items: center;
+    }
+
+    .brun {
+        background-color: var(--color-tertiary);
+        color: var(--color-white);
+    }
+
+    .turquoise {
+        background-color: var(--color-bg-secondary);
+    }
+
+    .vert {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+}
+
+.calendrier {
+    background-color: var(--color-secondary);
+    font-family: var(--font-primary);
+    padding: 20px;
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        width: 515px;
+    }
+}
+
+.calendrier-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+        color: var(--color-black);
+        font-size: var(--font-size-logo);
+    }
+
+    .calendrier-fleche {
+        display: flex;
+        gap: 32px;
+
+        .fleche-gauche {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.calendrier-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 8px;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-white);
+        font-size: 2rem;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            font-size: var(--font-size-date);
+        }
+    }
+}
+
+.legende {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h3 {
+        color: var(--color-secondary);
+    }
+
+    p {
+        font-size: var(--font-size-a);
+        color: var(--color-white);
+    }
+
+    .legende-couleur {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .brun,
+    .vert,
+    .turquoise {
+        height: 30px;
+        aspect-ratio: 1/1;
+        border: 2px solid var(--color-secondary);
+    }
+}
+
+.articles {
+    max-width: 703px;
+    color: var(--color-white);
+    display: none;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+
+    @media screen and (min-width: $breakpoint-ml) {
+        display: flex;
+    }
+
+    h3 {
+        color: var(--color-white);
+    }
+
+    article {
+        display: flex;
+        gap: 46px;
+        text-align: left;
+
+        .contenu {
+            max-width: 294px;
+        }
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    a {
+        color: var(--color-white);
+
+        &:hover {
+            color: var(--color-secondary);
+        }
+    }
+}
+
+.switch {
+    text-align: center;
+    margin-top: 25px;
+    color: var(--color-white);
+
+    &:hover {
+        color: var(--color-secondary);
+    }
+
+    @media screen and (min-width: $breakpoint-ml) {
+        display: none;
+    }
+}

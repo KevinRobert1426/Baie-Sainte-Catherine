@@ -1,0 +1,43 @@
+/* ==========================================================================
+   accordion / component
+   ========================================================================== */
+
+.accordion__container {
+    position: relative;
+    padding-bottom: 5px;
+    cursor: pointer;
+
+    &::after {
+        position: absolute;
+        content: '';
+        height: 4px;
+        background-color: var(--color-secondary);
+        width: 100%;
+        bottom: 0;
+    }
+    .accordion__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .icon {
+            color: var(--color-secondary);
+            transform: rotate(90deg);
+            transition: 0, 0.3s all ease-out;
+        }
+    }
+    .accordion__content {
+        display: none;
+    }
+
+    &.is-active {
+        //Exemple de gestion pour des icones
+        .icon {
+            transform: rotate(-90deg);
+        }
+        .accordion__content {
+            //On affiche le contenu lorsqu'il y a l'état is-active
+            display: block;
+        }
+    }
+}

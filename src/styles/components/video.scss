@@ -1,0 +1,60 @@
+/* ==========================================================================
+   video / component
+   ========================================================================== */
+.youtube {
+    padding-bottom: 50px;
+}
+
+.video {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    cursor: pointer;
+
+    img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    .icon {
+        color: var(--color-secondary);
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 1);
+        transition: 0.4s $ease-out-expo;
+        transition-property: opacity, transform;
+        transform-origin: 0 0;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        .is-video-ready & {
+            opacity: 1;
+        }
+    }
+
+    &:hover .icon {
+        transform: scale(1.8) translate(-25%, -55%) rotate(25deg);
+        color: var(--color-white);
+    }
+}
+
+.video__media {
+    @include cover();
+}
+
+.youtube-flex {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-top: 50px;
+
+    @media screen and (min-width: $breakpoint-ml) {
+        grid-template-columns: 1fr 1fr;
+    }
+}

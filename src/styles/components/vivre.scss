@@ -1,0 +1,69 @@
+/* ==========================================================================
+   vivre / component
+   ========================================================================== */
+
+.vivre {
+    padding: 20px 0;
+
+    h2 {
+        margin: 0 0 40px;
+
+        @media screen and (min-width: $breakpoint-ml) {
+            margin: 0 0 40px;
+        }
+    }
+
+    h3 {
+        margin: 0;
+
+        @media screen and (min-width: $breakpoint-ml) {
+            margin: 0 0 32px;
+        }
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        margin-top: 32px;
+    }
+}
+
+.vivre-flex {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 38px;
+
+    @media screen and (min-width: $breakpoint-ml) {
+        gap: 200px;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+    width: 100%;
+}
+
+.fleche-bas {
+    transform: rotate(90deg);
+    color: var(--color-secondary);
+}
+
+.disparaitre {
+    display: none;
+
+    @media screen and (min-width: $breakpoint-ml) {
+        display: block;
+    }
+}
+
+.aparaitre {
+    display: block;
+
+    @media screen and (min-width: $breakpoint-ml) {
+        display: none;
+    }
+}

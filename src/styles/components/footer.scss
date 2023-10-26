@@ -1,0 +1,123 @@
+.footer-grid {
+    background-color: var(--color-primary);
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    gap: 6px;
+    padding-top: 6px;
+}
+
+.infolettre {
+    padding: 35px 75px 35px 30px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: var(--color-bg-primary);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    @media screen and (min-width: $breakpoint-ml) {
+        padding-left: 70px;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
+
+.nav-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg-primary);
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    @media screen and (min-width: $breakpoint-sm) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    @media screen and (min-width: $breakpoint-ml) {
+        justify-content: space-between;
+        padding: 0 70px 0 35px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .logo-footer {
+        display: none;
+        height: 42px;
+        aspect-ratio: 1/1;
+
+        @media screen and (min-width: $breakpoint-ml) {
+            display: block;
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+        @media screen and (min-width: $breakpoint-sm) {
+            flex-direction: row;
+        }
+    }
+}
+
+.credit {
+    padding: 50px 30px 50px 30px;
+    background-color: var(--color-bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: center;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    gap: 65px;
+
+    p {
+        max-width: 500px;
+    }
+
+    .sociaux {
+        display: flex;
+        flex-direction: row;
+        gap: 37px;
+    }
+
+    @media screen and (min-width: $breakpoint-sm) {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    @media screen and (min-width: $breakpoint-ml) {
+        padding: 50px 70px 50px 35px;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+
+        .sociaux {
+            flex-direction: column;
+        }
+    }
+}
